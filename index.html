@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<button id="dark-mode">Dark Mode</button> <br><br>
+
+<body>
+
+    <button id="show-form-btn">Submit Character</button>
+
+    <div id="form-container">
+        <form id="form"  action="submit">
+            <label for="charname">Character name:</label>
+            <input type="text" id="charname" name="charname"><br><br>
+
+            <label for="species">Species:</label>
+            <select id="species" name="species">
+                <option value="Human">Human</option>
+                <option value="Alien">Alien</option>
+                <option value="Robot">Robot</option>
+                <option value="Unknown">Unknown</option>
+            </select><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" >
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Unknown">Unknown</option>
+            </select><br><br>
+
+            <label for="img">Image URL:</label>
+            <input type="text" id="img" name="img"><br><br>
+
+            <button type="submit" id="submit-form"> Submit</button>
+            
+        </form>
+    </div>
+
+    <br><br>
+
+    <div id="filter-container">
+
+        <label for="gender-filter">Filter by Gender:</label>
+        <select id="gender-filter">
+            <option value="all">All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="unknown">Unknown</option>
+        </select>
+
+        <label for="species-filter">Filter by Species:</label>
+        <select id="species-filter">
+            <option value="all">All</option>
+            <option value="Human">Human</option>
+            <option value="Alien">Alien</option>
+        </select>
+        
+    </div>
+    
+    
+    <div id="main-content">
+        <div id="search-container">
+
+            <input type="text" id="search-input" placeholder="Search characters...">
+            <button id="clear-search"> clear  </button>
+            
+        </div>
+
+        <div id="character-container">
+            <!-- character cards go here -->
+        </div>
+
+    </div>
+    
+
+   
+    <script src="index.js"></script>
+</body>
+</html>

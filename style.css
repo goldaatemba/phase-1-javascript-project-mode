@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Search & Form Containers */
+#search-container, #form-container, #filter-container {
+    margin: 20px auto;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Input Fields and Dropdowns */
+input[type="text"], select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#clear-search {
+    background-color: #ff4c4c;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+#clear-search:hover {
+    background-color: #c0392b;
+}
+
+/* Character Cards */
+#character-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.character-card {
+    width: 220px;
+    min-height: 320px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+.character-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.character-card img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Buttons inside cards */
+.like-btn {
+    background-color: #e74c3c;
+}
+
+.like-btn:hover {
+    background-color: #c0392b;
+}
+
+.remove-btn {
+    background-color: #333;
+}
+
+.remove-btn:hover {
+    background-color: #555;
+}
+
+/* Filter Section */
+#filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+select {
+    
+    background-color: white;
+    cursor: pointer;
+}
+
+select:hover {
+    border-color: #007bff;
+}
+
+#form-container {
+    display: none; /* Start hidden */
+}
+
+
+ /* Dark mode styles */
+.dark-mode { 
+    background-color: rgb(29, 27, 27);
+    color: white; /* Makes text readable in dark mode */
+}
+
+.dark-mode .character-card {
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode #search-container, 
+.dark-mode #form-container, 
+.dark-mode #filter-container {
+    background: #444;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode input, .dark-mode select {
+    background: #555;
+    color: white;
+    border: 1px solid #777;
+}
+
+.dark-mode button {
+    background-color: #007bff;
+}
+
+.dark-mode button:hover {
+    background-color: #0056b3;
+}
